@@ -746,6 +746,23 @@
     </section>
 
     <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__social">
+          <a href="https://www.instagram.com/buddyheroes/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/groups/146884692387258/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="mailto:hello@buddyhero.com"><i class="fa fa-envelope"></i></a>
+        </div>
+
+        <address>
+        Based in Saint-Petersburg,Russia <br>
+        For any questions<br>
+        E-mail: <a href="mailto:hello@buddyhero.com">hello@buddyhero.com</a>
+        <p>All rights reserved ©</p>
+        </address>
+      </div>
+
+
+
       <p>If you want to become a buddy — <a href="#">write to us.</a></p>
     </footer>
 
@@ -759,6 +776,27 @@
         <p>Use your Buddy programm or use your version,Buddy will help!</p>
         <button class="back" data-izimodal-close>Back</button>
       </div>
+    </div>
+
+    <div class="modal modal_get">
+      <button class="modal__close" data-izimodal-close></button>
+      <div class="modal__head">
+        <span class="modal__title">Booking</span>
+      </div>
+      <div class="modal__content">
+        <form class="form" action="SendMail.php" method="post">
+          <label class="form__field">
+            <span>Name:</span>
+            <input type="text">
+          </label>
+          <label class="form__field">
+            <span>Email:</span>
+            <input type="text">
+          </label>
+          <input class="submit" value="submit" type="submit">
+        </form>
+      </div>
+      <div class="modal__footer"></div>
     </div>
 
   </body>

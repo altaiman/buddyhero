@@ -177,6 +177,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
+  text-align: center;
 }
 
 .btn {
@@ -222,6 +223,27 @@
   background: #d43f3a;
 }
 
+.submit {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px auto 10px;
+  background: #5cb85c;
+  border-radius: 18px;
+  font-size: 18px;
+  padding: 8px 22px;
+  color: #212121;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .2s;
+  display: block;
+}
+
+.submit:hover {
+  background: #4cae4c;
+}
+
 .container {
   margin: 0 auto;
   padding: 0;
@@ -238,6 +260,10 @@
 
 .section {
   margin: 100px 0;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
 }
 
 .section__title {
@@ -463,22 +489,23 @@
 .footer {
   position: relative;
   text-align: center;
-  padding: 35px 0;
-  margin: 100px 0 0;
+  margin-bottom: 20px;
+}
+
+.footer__info {
+  padding: 40px 0 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #D8D8D8;
+}
+
+.footer__social {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .footer p {
   margin: 0;
-}
-
-.footer::before {
-  position: absolute;
-  left: 0;
-  top: -170px;
-  height: 170px;
-  width: 100%;
-  background: #D8D8D8;
-  content: '';
 }
 
 .more,
@@ -486,8 +513,11 @@
   display: none;
 }
 
-.modal_more {
+.modal {
   font-size: 24px;
+}
+
+.modal_more {
   max-width: 868px !important;
   width: 100%;
 }
@@ -535,10 +565,30 @@
   margin-top: -2px;
 }
 
+.form__field {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__field span {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+.form__field input {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  padding: 0;
+}
+
 @media (max-width: 1000px) {
   .buddy-big:nth-child(1n) {
     display: block;
     margin: 0 auto 10px;
+    max-width: 100%;
   }
 
   .buddy {
@@ -554,5 +604,29 @@
     max-width: 400px;
     margin: 0 auto 10px;
     padding: 20px;
+  }
+
+  .buddy-big {
+    width: 300px;
+  }
+
+  .buddy-big__photo {
+    height: 240px;
+  }
+
+  .welcome__slide {
+    height: 300px;
+  }
+
+  .welcome__bg {
+    max-height: 100%;
+  }
+
+  .welcome__caption {
+    font-size: 18px;
+  }
+
+  .modal {
+    font-size: 18px;
   }
 }

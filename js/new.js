@@ -13,6 +13,10 @@
     $('.modal_more').iziModal('open');
   });
 
+  $('.buddy__get').on('click', function() {
+    $('.modal_get').iziModal('open');
+  });
+
   //slider
   $('.welcome__slider').owlCarousel({
     autoWidth: true,
