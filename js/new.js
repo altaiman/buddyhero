@@ -26,4 +26,18 @@
     autoplay: true,
     dots: true
   });
+
+  $('.buddy__link').on('click', function(e) {
+    e.preventDefault();
+
+    var img = $(this).find('.buddy__photo img').clone();
+
+    $('.modal_zoom .modal__content').html(img);
+
+    $('.modal_zoom').iziModal('open');
+
+    setTimeout(function() {
+      $('.modal_zoom').iziModal('close');
+    }, 3000)
+  });
 })();

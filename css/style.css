@@ -1,5 +1,6 @@
 .page {
   font-family: 'Open Sans', sans-serif;
+  background: rgba(227, 227, 227, 0.19);
 }
 
 .carousel {
@@ -163,7 +164,7 @@
 
 .welcome__title {
   display: block;
-  font-size: 64px;
+  font-size: 80px;
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
@@ -360,18 +361,22 @@
 }
 
 .buddy-big__caption {
-  display: flex;
-  align-items: flex-end;
-  height: 68px;
-  margin: 0 0 30px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
 }
 
 .buddy-big__name {
-  position: absolute;
-  left: 0;
+  /* position: absolute; */
+  /* left: 0; */
+  display: block;
+  text-align: center;
   padding: 0 5%;
+  margin: 0 0 10px;
+  font-size: 21px;
   width: 100%;
-  bottom: 25px;
+  /* bottom: 25px; */
 }
 
 .caption {
@@ -476,6 +481,7 @@
 }
 
 .hobby {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   height: 14px;
@@ -486,6 +492,36 @@
   text-align: center;
   background: #D8D8D8;
   border-radius: 2px;
+  padding: 0 4px;
+  cursor: default;
+}
+
+.hobby span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.hobby[data-hint]::before {
+  position: absolute;
+  z-index: 9;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: attr(data-hint);
+  background: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 0 4px;
+  font-size: 10px;
+  margin: 4px 0 0 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hobby:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s .6s;
 }
 
 .hobby:first-child,
@@ -597,6 +633,15 @@
   content: '×';
   text-align: center;
   margin-top: -2px;
+}
+
+.modal_zoom {
+  background: none;
+  box-shadow: none;
+}
+
+.modal_zoom img {
+  width: 100%;
 }
 
 .form {
