@@ -1,6 +1,52 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Bold.eot');
+    src: url('../fonts/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff'),
+        url('../fonts/JosefinSans-Bold.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Bold.svg#JosefinSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Regular.eot');
+    src: url('../fonts/JosefinSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JosefinSans-Regular.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Regular.woff') format('woff'),
+        url('../fonts/JosefinSans-Regular.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Regular.svg#JosefinSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* styles */
+
 .page {
   font-family: 'Open Sans', sans-serif;
   background: rgba(227, 227, 227, 0.19);
+}
+
+.page__symbols {
+  display: none;
 }
 
 .carousel {
@@ -170,8 +216,13 @@
   text-transform: uppercase;
   text-align: center;
   margin: 40px 0 15px;
-  font-family: 'Luckiest Guy', sans-serif;
   letter-spacing: 2px;
+}
+
+.welcome__title svg {
+  fill: #000000;
+  width: 90%;
+  height: 70px;
 }
 
 .welcome__caption {
@@ -224,6 +275,28 @@
 
 .back:hover {
   background: #d43f3a;
+}
+
+.get {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0;
+  background: #FFC400;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px 16px;
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-weight: bold;
+  background: #FFD25B;
+  text-transform: uppercase;
+  transition: all .2s;
+  border: none;
+}
+
+.get:hover {
+  background: #EABE49;
 }
 
 .submit {
@@ -363,20 +436,17 @@
 .buddy-big__caption {
   display: block;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   margin: 0;
 }
 
 .buddy-big__name {
-  /* position: absolute; */
-  /* left: 0; */
   display: block;
   text-align: center;
   padding: 0 5%;
   margin: 0 0 10px;
-  font-size: 21px;
+  font-size: 18px;
   width: 100%;
-  /* bottom: 25px; */
 }
 
 .caption {
